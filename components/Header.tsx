@@ -16,9 +16,9 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Why Us', href: '#why-us' },
-    { name: 'Domains', href: '#domains' },
-    { name: 'Campus Ambassador', href: '#ambassador' },
+    { name: 'Why Us', href: '/#why-us' },
+    { name: 'Domains', href: '/#domains' },
+    { name: 'Campus Ambassador', href: '/#ambassador' },
   ];
 
   return (
@@ -83,8 +83,9 @@ const Header = () => {
                 </Link>
               ))}
               
+              {/* Updated href to page route */}
               <Link 
-                href="#verify"
+                href="/verify"
                 className="ml-4 px-6 py-2.5 text-sm font-bold text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 hover:shadow-blue-500/40 transition-all"
               >
                 Verify Certificate
@@ -114,8 +115,8 @@ const Header = () => {
       >
         <div className="flex flex-col h-full p-8">
             <div className="flex justify-between items-center mb-12">
-                <span className="font-bold text-blue-900">SKILLEDGE</span>
-                <button onClick={() => setIsMenuOpen(false)} className="text-gray-500 text-3xl">&times;</button>
+                <span className="font-bold text-blue-900 uppercase tracking-widest">SKILLEDGE</span>
+                <button onClick={() => setIsMenuOpen(false)} className="text-gray-500 text-3xl font-light">&times;</button>
             </div>
 
             <div className="flex flex-col space-y-6 items-center text-center">
@@ -141,8 +142,9 @@ const Header = () => {
                     </Link>
                 ))}
                 
+                {/* Updated href to page route for mobile as well */}
                 <Link 
-                    href="#verify"
+                    href="/verify"
                     onClick={() => setIsMenuOpen(false)}
                     className="w-full py-4 text-center text-lg font-bold text-white bg-blue-600 rounded-xl shadow-xl shadow-blue-200"
                 >

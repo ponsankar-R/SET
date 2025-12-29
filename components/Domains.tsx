@@ -1,8 +1,8 @@
 import React from 'react';
 import Section from './Section';
 import Button from './Button';
-// Added Globe and MapPin icons for Online/Offline indicators
-import { Code2, Terminal, CheckCircle2, LayoutTemplate, Globe, MapPin } from 'lucide-react';
+// Added Calendar icon for duration
+import { Code2, Terminal, CheckCircle2, LayoutTemplate, Globe, MapPin, Calendar } from 'lucide-react';
 
 // --- Micro-Illustrations (Kept from original) ---
 const WebDevIllustration = () => (
@@ -69,11 +69,10 @@ const DomainCard = ({ title, subtitle, projects, colorTheme, MainIcon, Illustrat
         <div className={`p-3 rounded-xl bg-white/20 backdrop-blur-sm ${theme.iconColor}`}>
           <MainIcon size={28} strokeWidth={2} />
         </div>
-        <div>
+        <div className="z-10">
           <h3 className="text-2xl font-bold mb-1">{title}</h3>
           <p className="text-white/90 font-medium text-sm md:text-base mb-3">{subtitle}</p>
           
-          {/* --- NEW: Mode Badges --- */}
           <div className="flex gap-2">
             <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/20 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider">
               <Globe size={12} /> Online
@@ -87,24 +86,35 @@ const DomainCard = ({ title, subtitle, projects, colorTheme, MainIcon, Illustrat
       </div>
       
       {/* Body */}
-      <div className="p-8 flex-grow flex flex-col md:flex-row gap-8 items-center">
-        <div className="flex-1 w-full">
-          <h4 className="font-bold text-gray-800 mb-6 uppercase text-xs tracking-widest flex items-center">
-            <LayoutTemplate size={16} className="mr-2 text-gray-400" />
-            Key Projects Curriculum
-          </h4>
-          <ul className="space-y-4">
-            {projects.map((project, idx) => (
-              <li key={idx} className="flex items-start text-gray-600 font-medium">
-                <CheckCircle2 className={`w-5 h-5 ${theme.checkColor} mr-3 mt-0.5 flex-shrink-0`} />
-                <span>{project}</span>
-              </li>
-            ))}
-          </ul>
+      <div className="p-8 flex-grow flex flex-col items-start">
+        {/* --- DURATION BADGE --- */}
+        <div className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl border mb-6 ${theme.badgeBg}`}>
+          <Calendar size={18} />
+          <div className="text-xs leading-tight">
+            <span className="block font-bold">28 Days Internship</span>
+            <span className="opacity-80 font-medium">7 Days Course + 21 Days Projects</span>
+          </div>
         </div>
 
-        <div className="hidden md:flex flex-1 w-full justify-center items-center p-4 transition-transform duration-500 group-hover:scale-105">
-           <Illustration />
+        <div className="flex flex-col md:flex-row gap-8 items-center w-full">
+          <div className="flex-1 w-full">
+            <h4 className="font-bold text-gray-800 mb-6 uppercase text-xs tracking-widest flex items-center">
+              <LayoutTemplate size={16} className="mr-2 text-gray-400" />
+              Key Projects Curriculum
+            </h4>
+            <ul className="space-y-4">
+              {projects.map((project, idx) => (
+                <li key={idx} className="flex items-start text-gray-600 font-medium text-sm lg:text-base">
+                  <CheckCircle2 className={`w-5 h-5 ${theme.checkColor} mr-3 mt-0.5 flex-shrink-0`} />
+                  <span>{project}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="hidden md:flex flex-1 w-full justify-center items-center p-4 transition-transform duration-500 group-hover:scale-105">
+             <Illustration />
+          </div>
         </div>
       </div>
       
@@ -121,9 +131,8 @@ const Domains = () => {
   return (
     <Section id="domains" background="gray" className="bg-gray-50/50">
       <div className="text-center mb-16 relative z-10">
-        {/* --- Updated Header Text --- */}
         <div className="inline-block px-4 py-1.5 mb-4 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-widest">
-           Flexible Training Formats
+            Flexible Training Formats
         </div>
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
           Internship Domains
@@ -133,7 +142,7 @@ const Domains = () => {
         </p>
       </div>
       
-      <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto relative z-10">
+      <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto relative z-10">
         <DomainCard 
           title="Web Development" 
           subtitle="Frontend, Backend & Responsive Design"
