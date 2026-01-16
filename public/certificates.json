@@ -1,0 +1,68 @@
+[
+    {
+      "id": "SE32A45",
+      "name": "Ponsankar R",
+      "regNo": "922523104104",
+      "college": "V.S.B. Engineering College, Karur",
+      "domain": "Web Development",
+      "period": "23/12/2025 to 12/01/2026",
+      "issueDate": "January 16, 2026",
+      "grade": "A+",
+      "type": "Internship"
+    },
+    {
+      "id": "SE24A97",
+      "name": "Varsha T",
+      "regNo": "922524243236",
+      "college": "V.S.B. Engineering College, Karur",
+      "domain": "Python for AI",
+      "period": "26/12/2025 to 10/01/2026",
+      "issueDate": "January 16, 2026",
+      "grade": "O",
+      "type": "Internship"
+    },
+    {
+        "id": "SE76C66",
+        "name": "Yamuna Devi T",
+        "regNo": "922524243245",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Python for AI",
+        "period": "26/12/2025 to 10/01/2026",
+        "issueDate": "January 16, 2026",
+        "grade": "O",
+        "type": "Internship"
+      },
+      {
+        "id": "SE92A98",
+        "name": "Swetha V",
+        "regNo": "922524243223",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Python for AI",
+        "period": "26/12/2025 to 10/01/2026",
+        "issueDate": "January 16, 2026",
+        "grade": "O",
+        "type": "Internship"
+      },
+      {
+        "id": "SE76N29",
+        "name": "Kavinkumar S",
+        "regNo": "922523104078",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Python for AI",
+        "period": "26/12/2025 to 10/01/2026",
+        "issueDate": "January 16, 2026",
+        "grade": "O",
+        "type": "Internship"
+      },
+      {
+        "id": "",
+        "name": "",
+        "regNo": "9225",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Python for AI",
+        "period": "26/12/2025 to 10/01/2026",
+        "issueDate": "January 16, 2026",
+        "grade": "O",
+        "type": "Internship"
+      }
+  ]
