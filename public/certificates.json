@@ -55,12 +55,23 @@
         "type": "Internship"
       },
       {
-        "id": "",
-        "name": "",
-        "regNo": "9225",
+        "id": "SE88A51",
+        "name": "Manjunath A",
+        "regNo": "922523104085",
         "college": "V.S.B. Engineering College, Karur",
         "domain": "Python for AI",
-        "period": "26/12/2025 to 10/01/2026",
+        "period": "24/12/2025 to 14/01/2026",
+        "issueDate": "January 16, 2026",
+        "grade": "O",
+        "type": "Internship"
+      },
+      {
+        "id": "SE88A70",
+        "name": "Logesh A",
+        "regNo": "922523104082",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Python for AI",
+        "period": "24/12/2025 to 14/01/2026",
         "issueDate": "January 16, 2026",
         "grade": "O",
         "type": "Internship"
