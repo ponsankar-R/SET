@@ -75,5 +75,27 @@
         "issueDate": "January 16, 2026",
         "grade": "O",
         "type": "Internship"
+      },
+      {
+        "id": "SE48L77",
+        "name": "Varsha T",
+        "regNo": "922524243236",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Data Analytics",
+        "period": "01/06/2026 to 01/07/2026",
+        "issueDate": "July 02, 2026",
+        "grade": "O",
+        "type": "Internship"
+      },
+      {
+        "id": "SE48L97",
+        "name": "Yamuna Devi T",
+        "regNo": "922524243245",
+        "college": "V.S.B. Engineering College, Karur",
+        "domain": "Data Analytics",
+        "period": "01/06/2026 to 01/07/2026",
+        "issueDate": "July 02, 2026",
+        "grade": "O",
+        "type": "Internship"
       }
   ]

@@ -15,7 +15,7 @@ export default function Home() {
       <div className="pt-20"> {/* Add padding for fixed header */}
         <Hero />
         <WhyUs />
-        <Process />
+        <Process  />
         <Domains />
         <Ambassador />
         <FAQ />
